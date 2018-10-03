@@ -1,5 +1,5 @@
 (function($) {
-  "use strict"; // Start of use strict
+  'use strict'; // Start of use strict
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -9,7 +9,7 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top)
-        }, 1000, "easeInOutExpo");
+        }, 1000, 'easeInOutExpo');
         return false;
       }
     }
@@ -25,4 +25,24 @@
     target: '#sideNav'
   });
 
+  $(document).ready(function() {
+    $('.BIBTeX').hide();
+    $('.BIBTeXtoggle').click( function () {
+      $(this).parent().children('.BIBTeX').toggle(300);
+      return false;
+    });
+    // $('.BIBYear').hide();
+    // $('.BIBYear:first').show();
+    $('.BIBYearheader').click( function () {
+      $(this).parent().children('.BIBYear').toggle(300);
+      return false;
+    });
+    $('.bibshowall').click( function () {
+      $('.BIBYear').show();
+    });
+    $('.bibhideall').click( function () {
+      $('.BIBYear').hide();
+      $('.BIBYear:first').show();
+    });
+  });
 })(jQuery); // End of use strict

@@ -1,0 +1,13 @@
+<h2>Publication</h2>
+<h4>Journal</h4>
+<div class="text-block">
+  {{ list_publications(category='article')|safe }}
+</div>
+<h4>Book Chapter</h4>
+<div class="text-block">
+  {{ list_publications(category='inbook')|safe }}
+</div>
+<h4>Conference</h4>
+<div class="text-block">
+  {{ list_publications(category='inproceedings')|safe }}
+</div>

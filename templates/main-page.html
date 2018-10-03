@@ -5,32 +5,25 @@
 
   <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
     <div class="my-auto">
-      <h1 class="mb-0">{{config.THEME_SETTINGS.first_name}}
-        <span class="text-primary">{{config.THEME_SETTINGS.last_name}}</span>
+      <h1 class="mb-0">
+        {{ config.THEME_SETTINGS.title }}
+        {{config.THEME_SETTINGS.first_name}}
+        {{config.THEME_SETTINGS.last_name}}
       </h1>
       <div class="subheading mb-5">
-      {% if config.THEME_SETTINGS.street %}
-        {{config.THEME_SETTINGS.street}} ·
+      {% if config.THEME_SETTINGS.position %}
+        {{config.THEME_SETTINGS.position}} ·
       {% endif %}
-      {% if config.THEME_SETTINGS.city %}
-        {{config.THEME_SETTINGS.city}},
+      {% if config.THEME_SETTINGS.affiliation %}
+        {{config.THEME_SETTINGS.affiliation}} ·
       {% endif %}
-      {% if config.THEME_SETTINGS.state %}
-          {{config.THEME_SETTINGS.state}}
+      {% if config.THEME_SETTINGS.country %}
+          {{config.THEME_SETTINGS.country}}
       {% endif %}
-      {% if config.THEME_SETTINGS.zip %}
-          {{config.THEME_SETTINGS.zip}} ·
-      {% endif %}
-      {% if config.THEME_SETTINGS.phone %}
-            {{config.THEME_SETTINGS.phone}} ·
-      {% endif %}
-        <a href="mailto:{{config.THEME_SETTINGS.email}}">{{config.THEME_SETTINGS.email}}</a>
+      <p><a href="mailto:{{config.THEME_SETTINGS.email}}">{{config.THEME_SETTINGS.email}}</a></p>
       </div>
-      <h2>{{this.title}}</h2>
-      <p class="mb-5">{{this.body}}</p>   
-      {% include "includes/social_row.html" %}
+      <p class="mb-5">{{this.body}}</p>
     </div>
   </section>
-
 </div>
 {% endblock %}
