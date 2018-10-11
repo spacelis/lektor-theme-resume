@@ -1,5 +1,7 @@
 // Mixins
 // Bootstrap Button Variant
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Poppins|Signika');
+
 @mixin background-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,8 +9,11 @@
   background-size: cover;
 }
 @mixin body-font {
-  font-family: 'Open Sans', serif;
+  font-family: 'EB Garamond', serif;
 }
 @mixin heading-font {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Signika', sans-serif;
+}
+@mixin big-heading-font {
+  font-family: 'Poppins', sans-serif;
 }

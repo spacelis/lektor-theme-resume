@@ -1,9 +1,14 @@
 // Core variables and mixins
 @import "variables.scss";
 @import "mixins.scss";
-// Global CSS
+@import "~bootstrap/scss/bootstrap";
+//
+// // Global CSS
 @import "global.scss";
+@import "bib.scss";
 @import "nav.scss";
 @import "resume-item.scss";
 @import "bootstrap-overrides.scss";
-// Components
+
+@import '../vendor/academicons/css/academicons.css';
+@import '~font-awesome/css/font-awesome.css';

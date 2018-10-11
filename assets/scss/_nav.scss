@@ -44,6 +44,7 @@
           display: block;
           .nav-link {
             display: block;
+            @include big-heading-font;
           }
         }
       }
