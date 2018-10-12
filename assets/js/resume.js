@@ -53,4 +53,11 @@ $(document).ready(function() {
     $('.BIBYear').hide();
     $('.BIBYear:first').show();
   });
+
+  $('img').click(function() {
+    $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+    $('#enlargeImageModal').modal('show');
+  });
 });
+
+
