@@ -61,6 +61,10 @@ h2 {
   }
 }
 
+.page a {
+  color: lighten($primary, 30%);
+}
+
 .list-icons {
   font-size: 3rem;
   .list-inline-item i {
