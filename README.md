@@ -1,6 +1,6 @@
 # Lektor Resume
 
-![screenshot](https://github.com/hannylicious/lektor-theme-resume/blob/master/images/screenshot.PNG "Screenshot")
+This is an adapted version of theme. Please refer to 
 
 Resume is a simple Lektor theme ported from [startbootstrap](https://startbootstrap.com), which is designed to fit the style of someone who wants a site they can link others to as well as a place to blog about what they're developing in addition to talking about previous projects.
 
